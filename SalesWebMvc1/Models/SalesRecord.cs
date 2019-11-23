@@ -21,5 +21,9 @@ namespace SalesWebMvc1.Models
             Amount = amount;
             Status = status;
         }
+
+        public SalesRecord(int id, DateTime date, double amount, SaleStatus status, Seller s1) : this(id, date, amount, status)
+        {
+        }
     }
 }
